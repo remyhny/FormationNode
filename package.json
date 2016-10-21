@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "toto" : "./bin/cli.js"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/remyhny/FormationNode#readme",
   "dependencies": {
+    "bossy": "^3.0.2",
     "hapi": "^15.2.0",
     "inert": "^4.0.2"
   }
