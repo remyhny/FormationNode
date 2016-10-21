@@ -1,0 +1,22 @@
+{
+  "name": "fmnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remyhny/FormationNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remyhny/FormationNode/issues"
+  },
+  "homepage": "https://github.com/remyhny/FormationNode#readme",
+  "dependencies": {
+    "hapi": "^15.2.0"
+  }
+}
