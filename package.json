@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "toto" : "./bin/cli.js"
+    "toto": "./bin/cli.js"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon ./bin/cli.js"
   },
   "repository": {
     "type": "git",
@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/remyhny/FormationNode#readme",
   "dependencies": {
+    "boom": "^4.2.0",
     "bossy": "^3.0.2",
     "hapi": "^15.2.0",
-    "inert": "^4.0.2"
+    "inert": "^4.0.2",
+    "joi": "^9.2.0",
+    "mongodb": "^2.2.11"
   }
 }

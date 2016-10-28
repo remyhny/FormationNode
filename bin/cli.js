@@ -22,14 +22,14 @@ var definition = {
 
 var args = Bossy.parse(definition);
 
-if (args.h || !args.d) {
+/*if (args.h || !args.d) {
     console.log(Bossy.usage(definition, 'hello -n <name>'))
     return;
-}
+}*/
 
 let port = args.p;
 let directory = args.d;
 
-server.start(directory, port, () => {
+server.start('public', port, () => {
     console.log('server start');
 });
