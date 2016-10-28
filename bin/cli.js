@@ -1,5 +1,9 @@
-const server = require('../lib/server.js');
+'use strict'
+
+const classServer = require('../lib/server.js');
 const Bossy = require('bossy');
+
+
 
 var definition = {
     p: {
@@ -30,6 +34,10 @@ var args = Bossy.parse(definition);
 let port = args.p;
 let directory = args.d;
 
-server.start('public', port, () => {
+let server = new classServer();
+
+server.configure('public', port);
+
+server.start(() => {
     console.log('server start');
 });
